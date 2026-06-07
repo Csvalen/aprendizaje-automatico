@@ -1,57 +1,96 @@
-Proyecto_Aprendizaje_Automatico
-==============================
+# Predicción del Consumo Mensual de Gas Envasado en Tierra del Fuego
 
-Predicción del consumo de gas envasado en Tierra del Fuego utilizando variables climaticas y aprendizaje automatico.
+## Descripción del Proyecto
 
-Project Organization
-------------
+Este proyecto tiene como objetivo desarrollar un modelo de Aprendizaje Automático capaz de predecir el consumo mensual de gas envasado en la provincia de Tierra del Fuego a partir de variables climáticas, meteorológicas y temporales.
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+La propuesta busca analizar la relación existente entre las condiciones ambientales y la demanda energética utilizando datos oficiales provenientes de organismos públicos y registros climáticos históricos de las ciudades de Río Grande y Ushuaia.
+
+## Objetivo General
+
+Desarrollar un modelo predictivo que permita estimar el consumo mensual de gas envasado utilizando información climática y temporal.
+
+## Objetivos Específicos
+
+* Obtener y consolidar datasets energéticos y climáticos.
+* Realizar tareas de limpieza y preprocesamiento de datos.
+* Integrar diferentes fuentes de información.
+* Aplicar análisis exploratorio de datos (EDA).
+* Seleccionar variables relevantes para el modelado.
+* Entrenar y comparar distintos modelos de regresión.
+* Evaluar el desempeño de los modelos mediante métricas apropiadas.
+* Interpretar los resultados obtenidos.
+
+## Variable Objetivo
+
+* consumo_gas_kg
+
+## Variables Predictoras
+
+* cantidad_usuarios
+* temp_max_rg
+* temp_min_rg
+* temp_media_rg
+* precipitacion_rg
+* nieve_rg
+* temp_max_ush
+* temp_min_ush
+* temp_media_ush
+* precipitacion_ush
+* nieve_ush
+* mes
+* anio
+
+## Estructura del Proyecto
+
+```text
+proyecto_aprendizaje_automatico/
+│
+├── data/          # Datos originales y procesados
+├── docs/          # Documentación del proyecto
+├── models/        # Modelos entrenados
+├── notebooks/     # Notebooks de análisis y modelado
+├── references/    # Material de referencia y fuentes
+├── reports/       # Informes y resultados
+├── src/           # Código fuente
+└── README.md
+```
+
+## Fuentes de Datos
+
+* Instituto Provincial de Análisis e Investigación, Estadística y Censos (IPIEC)
+* Registros meteorológicos de Río Grande y Ushuaia
+* Open-Meteo (recuperación de información climática faltante)
+
+## Modelos Evaluados
+
+* Regresión Lineal
+* Árbol de Decisión para Regresión
+* Random Forest Regressor
+
+## Métricas de Evaluación
+
+* MAE (Mean Absolute Error)
+* MSE (Mean Squared Error)
+* RMSE (Root Mean Squared Error)
+* Coeficiente de Determinación (R²)
+
+## Herramientas Utilizadas
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Matplotlib
+* Seaborn
+* Google Colab
+
+## Autora
+
+Sara Valenzuela
+
+Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial
+
+Centro Politécnico Superior Malvinas Argentinas
 
 
---------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
