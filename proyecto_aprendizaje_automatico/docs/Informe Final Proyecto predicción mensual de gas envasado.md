@@ -270,8 +270,8 @@ Este análisis permitió verificar que la variable objetivo presenta una dispers
 
 ### Figura 2. Distribución del consumo mensual de gas envasado (Boxplot)
 
-```
-## 5.2 Análisis de Correlación
+---
+### 5.2 Análisis de Correlación
 
 Con el objetivo de identificar relaciones entre las variables numéricas del dataset, se calculó una matriz de correlación y se representó gráficamente mediante un mapa de calor (*heatmap*).
 
@@ -285,11 +285,10 @@ Las variables temporales también mostraron capacidad explicativa, sugiriendo la
 
 En conjunto, este análisis permitió confirmar que las variables seleccionadas contienen información relevante para la construcción de modelos predictivos y justificó su utilización en las etapas posteriores del proyecto.
 
-### Figura 3. Matriz de correlación entre las variables del dataset
+<img width="880" height="619" alt="image" src="https://github.com/user-attachments/assets/0ec3d61f-c340-4594-9164-5a280b54a96f" />
 
-```markdown
-![Matriz de correlación](images/heatmap_correlacion.png)
-```
+
+### Figura 3. Matriz de correlación entre las variables del dataset
 
 ---
 
@@ -305,17 +304,13 @@ Este comportamiento resulta coherente con las condiciones climáticas de la prov
 
 La relación observada permitió confirmar que las variables térmicas constituyen algunos de los predictores más relevantes para explicar la demanda energética y justificó su incorporación dentro de los modelos de Aprendizaje Automático desarrollados.
 
+<img width="768" height="423" alt="image" src="https://github.com/user-attachments/assets/0a037cec-3abc-4077-999c-758d2c69c06f" />
+
 ### Figura 4. Relación entre consumo mensual de gas y temperatura media de Río Grande
 
-```markdown
-![Consumo vs Temperatura Río Grande](images/scatter_temp_rg.png)
-```
+<img width="730" height="466" alt="image" src="https://github.com/user-attachments/assets/69872f8e-9ec8-41e2-b38b-c89f174e6d5d" />
 
 ### Figura 5. Relación entre consumo mensual de gas y temperatura media de Ushuaia
-
-```markdown
-![Consumo vs Temperatura Ushuaia](images/scatter_temp_ush.png)
-```
 
 ---
 
@@ -333,11 +328,10 @@ Esta reducción podría estar relacionada con variaciones en la cantidad de usua
 
 En términos generales, la evolución histórica evidencia la existencia de tendencias temporales relevantes que justifican la incorporación de variables cronológicas dentro de los modelos predictivos desarrollados en el presente trabajo.
 
-### Figura 6. Evolución histórica del consumo mensual de gas envasado (2014–2025)
+<img width="797" height="366" alt="image" src="https://github.com/user-attachments/assets/5e6433ec-31ba-46ff-9643-5e282de76612" />
 
-```markdown
-![Serie temporal consumo de gas](images/serie_temporal_consumo.png)
-```
+
+### Figura 6. Evolución histórica del consumo mensual de gas envasado (2014–2025)
 
 ---
 
@@ -475,11 +469,12 @@ Los resultados obtenidos muestran una relación positiva consistente entre los v
 
 La mayoría de las observaciones se distribuyen próximas a la línea de referencia, evidenciando que el modelo logró capturar adecuadamente la tendencia general del consumo mensual de gas envasado.
 
+<img width="775" height="367" alt="image" src="https://github.com/user-attachments/assets/a91d2a4d-de68-4922-807d-7386a1020f07" />
+
 ### Figura 7. Comparación entre valores reales y predichos
 
-```markdown
-![Valores reales vs predichos](images/real_vs_predicho.png)
-```
+---
+
 ### 6.3.2 Análisis de Residuos
 
 Con el objetivo de complementar la evaluación del modelo, se realizó un análisis de residuos. Los residuos representan la diferencia entre los valores reales observados y las predicciones generadas por el algoritmo.
@@ -494,11 +489,9 @@ Sin embargo, la ausencia de patrones claramente definidos en la distribución de
 
 Los resultados obtenidos permiten concluir que los errores observados son compatibles con la complejidad inherente al fenómeno estudiado y no comprometen la capacidad predictiva general del modelo.
 
-### Figura 8. Análisis de residuos de la Regresión Lineal Múltiple
+<img width="838" height="402" alt="image" src="https://github.com/user-attachments/assets/50293274-66b7-472f-89dd-8c59a71eff59" />
 
-```markdown id="r81m4j"
-![Análisis de residuos](images/residuos_regresion.png)
-```
+### Figura 8. Análisis de residuos de la Regresión Lineal Múltiple
 
 ---
 
@@ -528,11 +521,9 @@ Asimismo, la importancia de las variables temporales evidencia la existencia de 
 
 Estos resultados no solo aportan evidencia sobre la capacidad predictiva del modelo, sino que también permiten comprender cuáles son los factores más relevantes para explicar las variaciones observadas en la demanda mensual de gas envasado.
 
-### Figura 9. Importancia relativa de las variables predictoras
+<img width="884" height="383" alt="image" src="https://github.com/user-attachments/assets/6f6f3a3a-066e-423a-bc93-94fc2f2bb0f7" />
 
-```markdown id="lj3zrv"
-![Importancia de variables](images/importancia_variables.png)
-```
+### Figura 9. Importancia relativa de las variables predictoras
 
 ---
 
