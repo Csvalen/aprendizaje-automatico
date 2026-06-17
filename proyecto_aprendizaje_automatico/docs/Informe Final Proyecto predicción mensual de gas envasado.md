@@ -261,16 +261,15 @@ Asimismo, los valores extremos observados fueron considerados consistentes con e
 
 Este análisis permitió verificar que la variable objetivo presenta una dispersión adecuada para el desarrollo de modelos de regresión orientados a explicar y predecir su comportamiento.
 
+<img width="784" height="353" alt="image" src="https://github.com/user-attachments/assets/0c907c78-7cf7-469d-913d-e49df4030b67" />
+
 ### Figura 1. Distribución del consumo mensual de gas envasado (Histograma)
 
-```markdown
-![Distribución del consumo de gas](images/histograma_consumo.png)
-```
+<img width="908" height="356" alt="image" src="https://github.com/user-attachments/assets/b8c3b447-17ac-443b-8380-683cbc03f71f" />
+
 
 ### Figura 2. Distribución del consumo mensual de gas envasado (Boxplot)
 
-```markdown
-![Boxplot consumo de gas](images/boxplot_consumo.png)
 ```
 ## 5.2 Análisis de Correlación
 
