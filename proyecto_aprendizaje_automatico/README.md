@@ -48,18 +48,15 @@ proyecto_aprendizaje_automatico/
 │
 ├── data/          # Datos originales y procesados
 ├── docs/          # Documentación del proyecto
-├── models/        # Modelos entrenados
 ├── notebooks/     # Notebooks de análisis y modelado
 ├── references/    # Material de referencia y fuentes
 ├── reports/       # Informes y resultados
-├── src/           # Código fuente
 └── README.md
 ```
 
 ## Fuentes de Datos
 
 * Instituto Provincial de Análisis e Investigación, Estadística y Censos (IPIEC)
-* Registros meteorológicos de Río Grande y Ushuaia
 * Open-Meteo (recuperación de información climática faltante)
 
 ## Modelos Evaluados
@@ -84,6 +81,10 @@ proyecto_aprendizaje_automatico/
 * Matplotlib
 * Seaborn
 * Google Colab
+* Open-Meteo
+
+# Modelo con mejor metrica y predicción elegido
+Regresión Lineal Multiple
 
 ## Autora
 
