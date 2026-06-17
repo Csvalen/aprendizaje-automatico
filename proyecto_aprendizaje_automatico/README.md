@@ -83,9 +83,6 @@ proyecto_aprendizaje_automatico/
 * Google Colab
 * Open-Meteo
 
-# Modelo con mejor metrica y predicción elegido
-Regresión Lineal Multiple
-
 ## Autora
 
 Sara Valenzuela
